@@ -1,0 +1,37 @@
+package com.neu.couponserviceapi.DTO;
+
+import java.io.Serializable;
+
+/**
+ * @author daniel
+ * 用户优惠券列表返回值
+ */
+public class UserCouponInfoDTO extends UserCouponDTO implements Serializable {
+
+    /**
+     * 优惠金额
+     */
+    private Integer reduceAmount;
+    /**
+     * 达到金额，如满500减50
+     */
+    private Integer achieveAmount;
+
+
+    public Integer getReduceAmount() {
+        return reduceAmount;
+    }
+
+    public void setReduceAmount(Integer reduceAmount) {
+        this.reduceAmount = reduceAmount;
+    }
+
+    public Integer getAchieveAmount() {
+        return achieveAmount;
+    }
+
+    public void setAchieveAmount(Integer achieveAmount) {
+        this.achieveAmount = achieveAmount;
+    }
+
+}
